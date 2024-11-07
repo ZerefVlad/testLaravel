@@ -17,6 +17,7 @@ To build and start the Docker containers, run the following command:
 docker-compose up --build
 
 This will set up all the required services (PHP, MySQL, Redis, RabbitMQ, and Nginx) as specified in the docker-compose.yml file.
+
 4. Access the Application
 Once the containers are up and running, open your web browser and go to the following link:
 
