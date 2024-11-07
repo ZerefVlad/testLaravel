@@ -19,7 +19,7 @@ COPY . /var/www/html
 
 RUN composer install
 
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/vendor
 
 EXPOSE 9000
 
