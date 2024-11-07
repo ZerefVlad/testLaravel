@@ -30,7 +30,7 @@ services:
             - REDIS_PASSWORD=null
             - REDIS_DB=0
         command: sh -c "while ! nc -z db 3306; do sleep 1; done; php artisan migrate --force && php-fpm"
-
+        entrypoint: /bin/bash -c "chown -R www-data:www-data /var/www/html && php-fpm"
     db:
         image: mysql:8.0
         container_name: mysql-db
